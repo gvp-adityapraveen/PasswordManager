@@ -15,6 +15,7 @@ public class RootEntryCheck
 		else
 		{
 			System.out.println("You are an illegitimate user!! Please go away");
+			System.exit(0);
 		}
 		
 	}
