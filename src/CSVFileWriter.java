@@ -61,7 +61,7 @@ public class CSVFileWriter
 					endflag=Object[3]; //assignment potential error
 				}
 			}
-			if(endflag.equals("true"))
+			if((endflag!=null)&&(endflag.equals("true")))
 					{
 				System.out.println("Username:"+username+" and password:"+password);				
 					}
@@ -103,7 +103,7 @@ public class CSVFileWriter
 					endflag=Object[3]; //assignment potential error
 				}
 			}
-			if(endflag.equals("true"))
+			if((endflag!=null)&&(endflag.equals("true")))
 					{
 				putData=verify.replaceAll("true", "false");//potential problem
 				bw.write(putData+"\r\n");
@@ -152,7 +152,7 @@ public class CSVFileWriter
 					password=Object[2];
 				}
 			}
-			if(endflag.equals("true"))
+			if((endflag!=null)&&(endflag.equals("true")))
 					{
 				String password_new;
 				System.out.println("Enter password");
